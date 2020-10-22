@@ -1,0 +1,55 @@
+<!--Main Content contact page added Jumbotron-->
+<main class="container">
+  <div class="jumbotron">
+
+    <!-- Contact content -->
+    <div id="myContact">
+      <div class="contactColumn">
+        <h1>CONTACT INFORMATION</h1>
+        <p>THIS IS THE CONTACT FIELD</p>
+      </div>
+      <div class="contactColumn">
+        <p>PLEASE COMPLETE YOUR INFORMATION HERE</p>
+      </div>
+    </div>
+
+    <form class="needs-validation" novalidate>
+
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom01">First Name</label>
+          <input type="text" class="form-control" id="firstName" required placeholder="Enter Your First Name">
+          <div class="valid-feedback">
+            Valid First Name!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom02">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required placeholder="Enter Your Last Name">
+          <div class="valid-feedback">
+            Valid Last Name!
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-12 mb-3">
+          <label for="validationCustom03">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter Your Valid Email" required>
+          <div class="invalid-feedback">
+            Enter Your Valid Email.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="validationTextarea">Short Message</label>
+        <textarea class="form-control" id="message" placeholder="Enter Your Message Here"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-outline-info"><i class="fas fa-file-import"></i>Send</button>
+      <button type="reset" class="btn btn-outline-warning"><i class="fas fa-redo"></i>Undo</button>
+
+    </form>
+  </div>
+</main>

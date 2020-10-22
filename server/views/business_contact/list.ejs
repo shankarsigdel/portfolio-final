@@ -1,0 +1,53 @@
+<!-- Business Contact list page content -->
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="offset-md-1 col-md-10">
+                <h1> <%= title %> </h1>
+                <a href="/business-contacts/add" class="btn btn-primary" role="button">
+                    <i class="fas fa-plus-circle"></i> Add a Contact</a>
+                <br>
+                <table class="table table-hover table-light">
+                    <!-- Header Row -->
+                    <tr class="table-info d-flex">
+                        <th class="text-center col-3">Contact Name</th>
+                        <th class="text-center col-2">Number</th>
+                        <th class="text-center col-5">Email</th>
+                        <th class="text-center col-1"></th>
+                        <th class="text-center col-1"></th>
+                    </tr>
+
+                    <!-- Repeatable Template Row -->
+                    <% for(let count = 0; count < ContactList.length; count++) { %>
+                    <tr class="d-flex">
+                        <td class="text-center col-3"><%= ContactList[count].contact_name %></td>
+                        <td class="text-center col-2"><%= ContactList[count].number %></td>
+                        <td class="text-center col-5"><%= ContactList[count].email %></td>
+                        <td class="text-center col-1">
+                            <a href="/business-contacts/update/<%= ContactList[count]._id %>"
+                                class="btn btn-primary btn-sm">
+                                <i class="fas fa-user-edit"></i>
+                            </a>
+                        </td>
+                        <td class="text-center col-1">
+                            <a href="/business-contacts/delete/<%= ContactList[count]._id %>"
+                                class="btn btn-warning btn-sm">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <% } %>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>

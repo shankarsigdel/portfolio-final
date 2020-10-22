@@ -1,0 +1,28 @@
+/*
+Name        :   Shankar Sigdel
+Project Name:   Express Portfolio Authentication
+Course Name :   Web Application Development
+Course Code :   COMP229-005 (WAD)
+Assignment  :   Assignment 02
+Instructor  :   Aderson Oliveira
+Date        :   2020/10/19
+*/
+/* custom css goes here */
+body
+{
+    margin-bottom: 60px;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+    color: rgb(253, 252, 252);
+    min-height: 88vh;
+    background-image: linear-gradient(rgba(39, 216, 69, 0.7), rgba(235, 175, 175, 0.7)), url(/Assets/images/background.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top;
+    background-position: fixed;
+}
+
+
