@@ -1,12 +1,4 @@
-/*
-Name        :   Shankar Sigdel
-Project Name:   Express Portfolio Authentication
-Course Name :   Web Application Development
-Course Code :   COMP229-005 (WAD)
-Assignment  :   Assignment 02
-Instructor  :   Aderson Oliveira
-Date        :   2020/10/19
-*/
+
 // IIFE -- Immediately Invoked Function Expression
 (function(){
     
@@ -48,7 +40,7 @@ Date        :   2020/10/19
         {
             console.log(button);
             button.addEventListener('click', (event) => {
-                if(!confirm("Do you want to delete this contact?"))
+                if(!confirm("Are You Sure?"))
                 {
                     event.preventDefault();
                     window.location.assign('/business-contacts');
@@ -108,7 +100,7 @@ Date        :   2020/10/19
         {
             button.addEventListener('click', (event) => {
                 console.log('clicked!');
-                if(!confirm('Do you want to delete this contact?'))
+                if(!confirm('Are you Sure?'))
                 {
                     event.preventDefault();
                     window.location.assign('/business-contacts');

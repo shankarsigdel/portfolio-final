@@ -1,6 +1,6 @@
 <!-- Main Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/"><img src="../../Assets/images/Logo.png" width="125" height="80" alt="">COMP229</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="/"><img src="../../Assets/images/Logo.png" width="125" height="80" alt="">SHANKAR SIGDEL</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
         <% } else  { %>
       <li class="nav-item">
         <% } %>
-        <a class="nav-link" href="/products"><i class="fab fa-lg fa-product-hunt"></i> Products </a>
+        <a class="nav-link" href="/products"><i class="fab fa-lg fa-product-hunt"></i> Projects </a>
       </li>
 
       <% if (title == "Services") { %>
@@ -38,7 +38,7 @@
         <% } else  { %>
       <li class="nav-item">
         <% } %>
-        <a class="nav-link" href="/services"><i class="fas fa-lg fa-users-cog"></i> Services </a>
+        <a class="nav-link" href="/services"><i class="fas fa-lg fa-users-cog"></i> Skills </a>
       </li>
 
       <% if(title == "Business Contacts") { %>
@@ -46,7 +46,7 @@
         <% } else {%>
       <li class="nav-item">
         <% } %>
-        <a class="nav-link" href="/business-contacts"><i class="far fa-address-card"></i>Business Contacts</a>
+        <a class="nav-link" href="/business-contacts"><i class="far fa-address-card"></i> Business Contacts </a>
       </li>
 
       <% if (title == "Contact") { %>
@@ -54,7 +54,7 @@
         <% } else  { %>
       <li class="nav-item">
         <% } %>
-        <a class="nav-link" href="/contact"><i class="fas fa-lg fa-address-book"></i> Contact </a>
+        <a class="nav-link" href="/contact"><i class="fas fa-lg fa-address-book"></i> Contact Me </a>
       </li>
 
       <% if(typeof displayName == 'string' && displayName) { %>

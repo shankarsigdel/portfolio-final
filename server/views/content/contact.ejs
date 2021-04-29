@@ -1,10 +1,14 @@
 <!--Main Content contact page added Jumbotron-->
 <main class="container">
   <div class="jumbotron">
-    <div class="col-3 ml-5 mt-5">
+    <div class="myInformation">
+      <br>
+      <br>
+      <br>
+      <br>
       <h1 >Contact Me</h1>
       <p>Name : Shankar Sigdel</p>
-      <p> ssigdel2@my.centennialcollege.ca</p>
+      <p>Email: ssigdel2@my.centennialcollege.ca</p>
       <p>Phone: (647) 608 7541</p>
       <p>Address: Scarborough, ON, CA</p>
     </div>
@@ -12,38 +16,39 @@
     <!-- Contact Form -->
     <form class="needs-validation" novalidate>
       <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="validationCustom01">First Name</label>
-          <input type="text" class="form-control" id="firstName" required placeholder="Enter Your First Name">
-          <div class="valid-feedback">
-            Valid First Name!
-          </div>
+        <div class="form-group col-md-6">
+          <label for="firstName"><i class="fas fa-file-signature"></i>First Name</label>
+          <input type="text" class="form-control" id="firstName" aria-describedby="firstName" 
+          placeholder="Enter your first name" required autofocus>
         </div>
-        <div class="col-md-6 mb-3">
-          <label for="validationCustom02">Last Name</label>
-          <input type="text" class="form-control" id="lastName" required placeholder="Enter Your Last Name">
-          <div class="valid-feedback">
-            Valid Last Name!
-          </div>
+        <div class="form-group col-md-6">
+          <label for="lastName"><i class="fas fa-file-signature"></i>Last Name</label>
+          <input type="text" class="form-control" id="lastName" aria-describedby="lastName"
+          placeholder="Enter your last name" required>
         </div>
       </div>
-
       <div class="form-row">
         <div class="col-md-12 mb-3">
-          <label for="validationCustom03">Email</label>
+          <label for="validationCustom03"><i class="fas fa-envelope"></i>Email</label>
           <input type="email" class="form-control" id="email" placeholder="Enter Your Valid Email" required>
           <div class="invalid-feedback">
             Enter Your Valid Email.
           </div>
         </div>
       </div>
+      <div class="form-group">
+        <label for="contactNumber"><i class="fas fa-mobile-alt"></i>Contact Number</label>
+        <input type="tel" class="form-control" id="contactNumber" aria-describedby="contactNumber"
+        placeholder="123-456-7890">
+      </div>
       <div class="mb-3">
-        <label for="validationTextarea">Short Message</label>
+        <label for="validationTextarea"><i class="far fa-comments"></i>Short Message</label>
         <textarea class="form-control" id="message" placeholder="Enter Your Message Here"></textarea>
       </div>
-
-      <button type="submit" class="btn btn-outline-info"><i class="fas fa-file-import"></i>Send</button>
-      <button type="reset" class="btn btn-outline-warning"><i class="fas fa-redo"></i>Undo</button>
+      <div class="submitResetButtons">
+        <button type="submit" class="btn-outline-info"><i class="fas fa-file-import"></i>Send</button>
+        <button type="reset" class="btn-outline-warning"><i class="fas fa-redo"></i>Undo</button>
+      </div>
     </form>
   </div>
 </main>

@@ -1,13 +1,3 @@
-/*
-Name        :   Shankar Sigdel
-Project Name:   Express Portfolio Authentication
-Course Name :   Web Application Development
-Course Code :   COMP229-005 (WAD)
-Assignment  :   Assignment 02
-Instructor  :   Aderson Oliveira
-Date        :   2020/10/19
-*/
-
 let express = require('express');
 let router = express.Router();
 
