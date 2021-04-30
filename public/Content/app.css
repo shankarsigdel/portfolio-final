@@ -69,3 +69,36 @@ div.goToTop{
     text-align: center;
 
 }
+
+hr.home{
+    border-style:solid; 
+    border-color: olive; 
+    border-width: 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+hr.about{
+    border-style:solid; 
+    border-color: olive; 
+    border-width: 2px;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+hr.product{
+    border-style:solid; 
+    border-color: olive; 
+    border-width: 2px;
+}
+
+hr.services{
+    border-style:solid; 
+    border-color: olive; 
+    border-width: 2px;
+
+}
+
+div.connectwithotherpage{
+    text-align: center;
+}
